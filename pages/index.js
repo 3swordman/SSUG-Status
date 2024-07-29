@@ -100,12 +100,15 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             </a>
           </div>
           <div>
+            The source code is provided by{' '}
             <a
               href="https://github.com/eidam/cf-workers-status-page"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              Get Your Status Page
+              eidam
             </a>
+            , and rebuilt by SSUGers
           </div>
         </div>
       </div>
