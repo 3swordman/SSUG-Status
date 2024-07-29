@@ -15,11 +15,11 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: ssug-hk-main-matrix-server # unique identifier
+  - id: ssug-hk-central-matrix-server # unique identifier
     name: SSUG Central Matrix Server
     description: 'The SSUG Central Matrix Server' # default=empty
     url: 'https://matrix.ssug.top/' # URL to fetch
-    method: GET # default=GET
+    method: POST # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
