@@ -2,7 +2,7 @@ settings:
   title: 'SSUG Status'
   url: 'https://status.ssug.top' # used for Slack messages
   logo: SSUG.jpeg # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -33,3 +33,11 @@ monitors:
     followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
+  - id: ssug-element-web # unique identifier
+    name: SSUG Element Web
+    description: 'The SSUG Element Web Client' # default=empty
+    url: 'https://element.ssug.top' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
