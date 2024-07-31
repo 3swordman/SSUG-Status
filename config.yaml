@@ -42,7 +42,7 @@ monitors:
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
-    - id: ssug-sso-front_end # unique identifier
+  - id: ssug-sso-front_end # unique identifier
     name: SSUG SSO Service (Front-end)
     description: 'The Front-end of SSUG SSO Service' # default=empty
     url: 'https://sso.ssug.top' # URL to fetch
