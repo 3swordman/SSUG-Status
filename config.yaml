@@ -41,3 +41,21 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
+
+    - id: ssug-sso-front_end # unique identifier
+    name: SSUG SSO Service (Front-end)
+    description: 'The Front-end of SSUG SSO Service' # default=empty
+    url: 'https://sso.ssug.top' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+  - id: ssug-law # unique identifier
+    name: SSUG Laws Database
+    description: 'The SSUG Laws Database' # default=empty
+    url: 'https://law.ssug.top' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
