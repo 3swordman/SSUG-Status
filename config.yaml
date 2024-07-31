@@ -51,10 +51,10 @@ monitors:
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
-  - id: ssug-sso-back-end-test # unique identifier
+  - id: ssug-sso-back-end # unique identifier
     name: SSUG SSO Service (Back-end)
     description: 'The Back-end of SSUG SSO Service' # default=empty
-    url: 'http://api.sso.ssug.top/status_check' # URL to fetch
+    url: 'https://api.sso.ssug.top/status_check' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
