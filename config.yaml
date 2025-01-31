@@ -76,4 +76,31 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true    
+
+  - id: ssug-nav # unique identifier
+    name: SSUG Homepage # follow the website's title
+    description: 'The SSUG Official Navigation Website' # default=empty
+    url: 'https://nav.ssug.top' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true    
+
+  - id: ssug-ai # unique identifier
+    name: SSUG AI Service (OpenWebUI)
+    description: 'The SSUG Official AI Model Provider Based on OpenWebUI' # default=empty
+    url: 'https://ai.ssug.top' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true    
+
+  - id: ssug-fatpaper # unique identifier
+    name: SSUG Fatpaper Game
+    description: 'The SSUG Official Game Website' # default=empty
+    url: 'http://fatpaper.game.ssug.top' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true    
